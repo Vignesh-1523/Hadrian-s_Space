@@ -1,0 +1,126 @@
+.contact{
+    width: 100vw;
+    height: 70vh;
+    background: #040615;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    min-height: 40vh;
+    width: 2px;
+    background-color: #6d00d3;
+    box-shadow: 0 0 3px #6d00d3;
+    left: 0;
+    margin-left: 20%;
+    top: 0;
+    z-index: 1;
+}
+.service{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 40vh;
+    border-radius: 30px;
+    background-image: url('/img3.jpeg');
+    z-index: 0;
+}
+.service span{
+    color: skyblue;
+    font-weight: 700;
+    font-size: 0.95em;
+    text-shadow: 0 0 1px skyblue;
+    letter-spacing: 1px;
+    margin-top: -5em;
+    margin-bottom: 2em;
+    margin-left: -2em;
+}
+.service div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    height: 10em;
+    border-radius: 30px;
+    background-image: url('/img2.jpeg');
+    line-height: 1.5;
+    border: 1px solid rgba(211, 211, 211, 0.199);
+    box-shadow: 0 0 20px #3f3f3f44;
+    padding-inline: 20px;
+    z-index: 0;
+}
+
+.service div .big{
+    font-size: 1.5em;
+    margin-top: -0.5em;
+    margin-bottom: 1.2em;
+    color: #9931fa;
+    text-shadow: 0 0 2px #6d00d3;
+}
+.service div .big .exlm{
+    color: white;
+    text-shadow: 0 0 3px white;
+    margin: 0 0 0 0.2em;
+    animation: flickerSpan 1.5s linear infinite;
+}
+@keyframes flickerSpan {
+    0%, 19%, 24%, 80% {opacity: 1;}
+    20%, 23%, 81%, 84%, 89% {opacity: 0.6;}
+    10%, 50%, 85% {opacity: .8;}
+}
+.service div .small{
+    color: #a0a0aa;
+    transition: 0.5s ease-in-out;
+}
+.service div:hover .small{
+    color: rgb(196, 196, 196);
+    text-shadow: 0 0 2px rgb(196, 196, 196);
+}
+.service .btn{
+    background: linear-gradient(180deg,#06e1f4 0%,rgb(0, 88, 121) 100%);
+    margin-top: 2em;
+    transition: 0.5s ease-in-out;
+}
+.service .btn a{
+    color: rgb(255, 255, 255);
+}
+.service .btn:hover{
+    box-shadow: 0 0 130px #06e0f4;
+}
+.connect{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-inline: 15px;
+    width: 100%;
+    max-height: 30vh;
+    border-top: 1px solid rgba(211, 211, 211, 0.199);
+    z-index: 1;
+}
+.connect div a{
+    text-decoration: none;
+    font-size: 1.2em;
+    /* color: #6d00d3; */
+    color: rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 4em;
+}
+.connect div a:hover{
+    text-shadow: 0 0 1px white;
+}
+.connect div a ion-icon{
+    margin-right: 0.5em;
+    font-size: 2em;
+    color: #a442ff;
+    /* color: rgb(196, 196, 196); */
+}
+
