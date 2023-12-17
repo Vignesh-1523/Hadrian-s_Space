@@ -81,18 +81,17 @@ header .navbar{
 .navbar a span{
     color: #444444;
 }
-.navbar #start{
+.navbar .blink{
     color: #9931fa;
     text-shadow: 0 0 50px #9931fa;
 }
-.navbar #start span{
+.navbar .blink span{
     color: white;
     text-shadow: 0 0 5px white;
     animation: flickerSpan 1.5s linear infinite;
 }
-.navbar a:hover{
+/* .navbar a:hover{
     color: #9931fa;
-    /* color: #8400ff; */
     text-shadow: 0 0 50px #ba7ff1;
 }
 .navbar a:hover span{
@@ -100,7 +99,7 @@ header .navbar{
     text-shadow: 0 0 5px white;
     transition: 1s ease-in;
     animation: flickerSpan 1.5s linear forwards;
-}
+} */
 @keyframes flickerSpan {
     0%, 19%, 24%, 80% {opacity: 1;}
     20%, 23%, 81%, 84%, 89% {opacity: 0.6;}
