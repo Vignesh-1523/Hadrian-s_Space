@@ -25,9 +25,9 @@
         <header>
             <h2>Hadrian's <i class='bx bx-code-alt'></i> space</h2>
             <div class="navbar">
-                <a href="#home" id="start">Start <span>/></span></a>
-                <a href="#about">About <span>/></span></a>
-                <a href="#portfolio">Work <span>/></span></a>
+                <a href="#home" id="startMenu" class="blink">Start <span>/></span></a>
+                <a href="#about" id="aboutMenu">About <span>/></span></a>
+                <a href="#portfolio" id="workMenu">Work <span>/></span></a>
             </div> 
             <button class="btn"><a href="#contact">Get in touch</a></button>
         </header>
@@ -52,7 +52,7 @@
                 <div class="profile">
                     <h1>Hi, my name is <span class="text"></span></h1>
                 </div>
-                <div class="profile-summary">
+                <div class="profile-summary" data-aos="fade-in">
                     <span><span>//</span>  I can, because I did !</span>
                     <p><span>"</span>Passionate self-taught programmer and web developer from non-engineering and non-technical background with a flair for creativity and innovation. As a relentless learner, I thrive in dynamic environments and every challenge I've encountered has been an opportunity for my growth. From coding to captivating design, I bring a holistic approach to projects<span>"</span>
                 </div>
@@ -77,6 +77,7 @@
             <div class="degree">
                 <p><span class="dots">// Education.....</span></p> <br>
                 <p><span class="constr">class</span> <span class="cls-name">Me</span> {</p>
+                <p><span class="dots">................// Hadrian stein is my alterEgo name.</span></p>
                 <p><span class="dots">....</span><span class="constr">constructor</span> ( ) {</p> 
                 <p><span class="dots">........</span><span class="this">this</span>.<span class="this_nd">name</span> = <span class="info">' Vignesh rajamanickam '</span></p>
                 <p><span class="dots">........</span><span class="this">this</span>.<span class="this_nd">dateOfBirth</span> = <span class="info">' 15-september-2001 '</span></p>
@@ -84,7 +85,7 @@
                 <p><span class="dots">....</span><span class="cls-name">education</span> ( ) {</p>
                 <p><span class="dots">........</span><span class="this">return</span> [</p> 
                 <p><span class="dots">............</span>{ <span class="constr">'Degree'</span> <span class="space">.......</span>: <span class="per">' Bachelor Of Science </span><span class="info">- Chemistry '</span> },</p>
-                <p><span class="dots">............</span>{ <span class="constr">'2019-2022'</span> : <span class="info">' Sri ramankrishna college of arts and science (autonomous) '</span> },</p>
+                <p><span class="dots">............</span>{ <span class="constr">'2019-2022'</span> : <span class="info">' Sri ramakrishna college of arts and science (autonomous) '</span> },</p>
                 <p><span class="dots">............</span>{ <span class="this_nd">'Percentage'</span> : <span class="per">' 84% '</span> },</p>
                 <p><span class="dots">............</span>{ <span class="constr">'2017-2019'</span> : <span class="info">' Meenakshi sundaranar sengunthar higher secondary school '</span> },</p>
                 <p><span class="dots">............</span>{ <span class="this_nd">'Percentage'</span> : <span class="per">' 80% '</span> }</p>
@@ -250,6 +251,7 @@
     
     <script src="scrambledText.js"></script>
     <script type="module" src="slider.js"></script>
-    
+    <script src="app.js"></script>
+
 </body>
 </html>
