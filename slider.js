@@ -3,7 +3,7 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.item');
 
-// config param
+
 let countItem = items.length;
 let itemActive = 0;
 // event next click
