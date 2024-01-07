@@ -100,7 +100,7 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/image/one.jpeg');
+    background-image: url('/one.jpeg');
     z-index: 1;
 }
 .profile-summary span{
@@ -143,7 +143,7 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/image/one.jpeg');
+    background-image: url('/one.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
