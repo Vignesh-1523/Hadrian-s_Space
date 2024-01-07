@@ -33,14 +33,33 @@
 }
 .home .contents{
     /* background-color: white; */
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     width: 70%;
-    margin-left: 15%;
-    margin-top: 3.5em;
+    margin-left: 13%;
+    /* margin-top: 9%; */
+}
+.home .contents .tag{
+    color: #a0a0a0;
+    /* background-color: black; */
+    position: absolute;
+    top: 29.5%;
+}
+.home .contents .tag span{
+    color: white;
+    text-shadow: 0 0 5px white;
+    animation: flickerSpan 2s linear infinite;
+}
+@keyframes flickerSpan {
+    0%, 19%, 24%, 80% {opacity: 1;}
+    20%, 23%, 81%, 84%, 89% {opacity: 0.6;}
+    10%, 50%, 85% {opacity: .8;}
 }
 .home .contents .profile{
     text-align: left;
+    position: absolute;
+    top: 37%;
 }
 .tag1{
     font-size: 3.5em;
