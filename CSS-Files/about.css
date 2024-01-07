@@ -100,7 +100,8 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/one.jpeg');
+    /* background-image: url('/one.jpeg'); */
+    background-color: #041825;
     z-index: 1;
 }
 .profile-summary span{
@@ -143,9 +144,10 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/one.jpeg');
+    /* background-image: url('/one.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #041825;
     z-index: 1;
 }
 .skills h2{

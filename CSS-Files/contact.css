@@ -26,7 +26,7 @@
     width: 100%;
     min-height: 40vh;
     border-radius: 30px;
-    background-image: url('/two.jpeg');
+    /* background-image: url('/two.jpeg'); */
     z-index: 0;
 }
 .service span{
@@ -48,7 +48,7 @@
     width: 55%;
     height: 10em;
     border-radius: 30px;
-    background-image: url('/one.jpeg');
+    background-color: #041825;
     line-height: 1.5;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
