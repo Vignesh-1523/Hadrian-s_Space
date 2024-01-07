@@ -26,7 +26,7 @@
     width: 100%;
     min-height: 40vh;
     border-radius: 30px;
-    background-image: url('/img3.jpeg');
+    background-image: url('/image/two.jpeg');
     z-index: 0;
 }
 .service span{
@@ -48,7 +48,7 @@
     width: 55%;
     height: 10em;
     border-radius: 30px;
-    background-image: url('/img2.jpeg');
+    background-image: url('/image/one.jpeg');
     line-height: 1.5;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
@@ -105,7 +105,7 @@
 }
 .connect div a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     /* color: #6d00d3; */
     color: rgb(196, 196, 196);
     display: flex;
