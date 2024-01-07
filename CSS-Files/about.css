@@ -27,8 +27,7 @@
     border: 3px solid #6d00d3;
     box-shadow: 0 0 3px #6d00d3;
     border-radius: 50%;
-    left: 0;
-    margin-left: 19.6%;
+    left: 19.6%;
     top: 0;
     margin-top: 10%;
     z-index: 1;
@@ -80,8 +79,10 @@
     10%, 50%, 85% {opacity: .8;}
 }
 .about .contents .profile{
-    margin: 5% 0 2em 0;
-    /* background-color: black; */
+    margin: 5% auto 2em auto;
+    /* background-color: white; */
+    height: 6em;
+    width: 100%;
 }
 .about .contents .profile h1{
     font-size: 3em;
@@ -89,7 +90,6 @@
 }
 .about .contents .profile h1 span{
     color: #6d00d3;
-    /* text-shadow: 0 0 2px #9931fa; */
 }
 .profile-summary{
     display: flex;
@@ -100,7 +100,7 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/img2.jpeg');
+    background-image: url('/image/one.jpeg');
     z-index: 1;
 }
 .profile-summary span{
@@ -143,7 +143,9 @@
     border-radius: 30px;
     border: 1px solid rgba(211, 211, 211, 0.199);
     box-shadow: 0 0 20px #3f3f3f44;
-    background-image: url('/img2.jpeg');
+    background-image: url('/image/one.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 .skills h2{
@@ -249,152 +251,129 @@
 #c:before{
     content: '';
     position: absolute;
-    width: 2px;
-    height: 0px;
-    top: 100%;
-    left: 50%;
+    width: 0px;
+    height: 2px;
+    top: 80%;
+    left: 80%;
     background-color: #6d00d3;
     text-shadow: 0 0 5px #9931fa;
     z-index: -1;
-    animation: length_2 0.5s linear forwards;
-    animation-delay: 1s;
+    animation: length_2 2s linear forwards;
     display: none;
 }
 #f:before{
     content: '';
     position: absolute;
-    width: 2px;
-    height: 0px;
-    bottom: 100%;
-    left: 50%;
+    width: 0px;
+    height: 2px;
+    bottom: 80%;
+    left: 80%;
     background-color: #6d00d3;
     text-shadow: 0 0 5px #9931fa;
     z-index: -1;
-    animation: length_2 0.5s linear forwards;
-    animation-delay: 1s;
+    animation: length_2 2s linear forwards;
     display: none;
 }
 @keyframes length_2{
-    from{height: 0px;}
-    to{height: 15px;}
+    from{width: 0px;}
+    to{width: 360px;}
 }
-.titles{
-    position: absolute;
-    display: inline-block;
-}
-.titles p{
-    position: absolute;
-    font-size: 1em;
-    font-family: 'Courier Prime', monospace;
-    text-shadow: 0 0 3px white;
-}
-.titles p span{
+#a::after, #b::after {
     padding: 0;
+    content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
+    right: calc(250px + 100%);
     border-radius: 50%;
     border: 2px solid #6d00d3;
     background-color: #040615;
     text-shadow: 0 0 5px #9931fa;
-    animation: show 2s linear forwards;
+    animation: dots 2s linear forwards;
     display: none;
 }
-@keyframes show{
-    0%, 90%{opacity: 0;}
-    100%{opacity: 1;}
+
+#d::after, #e::after {
+    padding: 0;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: calc(270px + 100%);
+    border-radius: 50%;
+    border: 2px solid #6d00d3;
+    background-color: #040615;
+    text-shadow: 0 0 5px #9931fa;
+    animation: dots 2s linear forwards;
+    display: none;
 }
-.css{
-    left: -27.5em;
-    top: -6.5em;
+
+#c::after {
+    padding: 0;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: calc(80% + 360px);
+    margin-top: 62%;
+    border-radius: 50%;
+    border: 2px solid #6d00d3;
+    background-color: #040615;
+    text-shadow: 0 0 5px #9931fa;
+    animation: dots 2s linear forwards;
+    display: none;
+}
+#f::after {
+    padding: 0;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: calc(80% + 360px);
+    margin-top: -62%;
+    border-radius: 50%;
+    border: 2px solid #6d00d3;
+    background-color: #040615;
+    text-shadow: 0 0 5px #9931fa;
+    animation: dots 2s linear forwards;
+    display: none;
+}
+@keyframes dots {
+   0%, 80%{opacity: 0;}
+   100%{opacity: 1;}
+}
+
+.skills span p{
+    position: absolute;
+    min-width: 130px;
+    display: none;
+    /* font-family: 'Nova Square', sans-serif; */
+    /* background-color: #00e77b; */
+}
+.css, .js{
+    right: calc(100% + 115px);
+    top: 25%;
     animation: glow 1.5s linear forwards;
-    display: none;
 }
-.js{
-    left: -27.5em;
-    top: 2.8em;
+.java, .sql{
+    left: calc(100% + 200px);
+    top: 25%;
     animation: glow 1.5s linear forwards;
-    display: none;
 }
-.java{
-    right: -28em;
-    top: 2.8em;
+.html{
+    left: calc(80% + 275px);
+    bottom: 25%;
     animation: glow 1.5s linear forwards;
-    display: none;
 }
-.sql{
-    right: -28em;
-    top: -6.5em;
+.git{
+    left: calc(80% + 270px);
+    bottom: 88%;
     animation: glow 1.5s linear forwards;
-    display: none;
 }
 @keyframes glow{
     0%, 80%{opacity: 0;}
     100%{opacity: 1;}
 }
-.html{
-    position: absolute;
-    width: 100px;
-    right: -25.5em;
-    bottom: -13em;
-    display: none;
-}
-.html::after{
-    content: '';
-    width: 24.5em;
-    height: 2px;
-    position: absolute;
-    right: 1em;
-    top: 1.2em;
-    background-color: #6d00d3;
-    text-shadow: 0 0 5px #9931fa;
-    animation: length_3 1s linear forwards;
-}
-.git{
-    position: absolute;
-    width: 100px;
-    right: -24em;
-    top: -15.2em;
-    display: none;
-}
-.git::after{
-    content: '';
-    width: 24.5em;
-    height: 2px;
-    position: absolute;
-    right: -0.5em;
-    top: 1.2em;
-    background-color: #6d00d3;
-    text-shadow: 0 0 5px #9931fa;
-    animation: length_3 1s linear forwards;
-}
-@keyframes length_3{
-    from{width: 0px;}
-    to{width: 24.5em;}
-}
-.css span{
-    left: -1em;
-    margin-top: -1px;
-}
-.js span{
-    left: -1em;
-}
-.sql span{
-    right: -1.5em;
-    margin-top: -1px;
-}
-.java span{
-    right: -1.5em;
-}
-.git span{
-    right: -1em;
-    margin-top: -4px;
-}
-.html span{
-    margin-left: 5.2em;
-    margin-top: -4px;
-}
-
 
 .degree{
     display: inline;
@@ -441,6 +420,10 @@
 
 .skills:hover #a:before, .skills:hover #b:before, .skills:hover #c:before,
 .skills:hover #d:before, .skills:hover #e:before, .skills:hover #f:before{
+    display: inline-block;
+}
+.skills:hover #a::after, .skills:hover #b::after, .skills:hover #c::after,
+.skills:hover #d::after, .skills:hover #e::after, .skills:hover #f::after{
     display: inline-block;
 }
 .skills:hover .titles p span{
