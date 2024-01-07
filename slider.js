@@ -41,7 +41,7 @@ function showSlider(){
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
-    }, 50000)
+    }, 5000)
 }
 
 // click thumbnail
