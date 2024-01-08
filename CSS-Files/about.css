@@ -91,6 +91,9 @@
 .about .contents .profile h1 span{
     color: #6d00d3;
 }
+.br{
+    display: none;
+}
 .profile-summary{
     display: flex;
     flex-direction: column;
@@ -130,9 +133,6 @@
     text-shadow: 0 0 5px #9931fa;
     font-size: 20px;
 }
-.edu-details{
-    display: flex;
-}
 .skills{
     display: flex;
     justify-content: center;
@@ -154,7 +154,6 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 2em;
     text-shadow: 0 0 3px white;
-    animation: blink 0.5s linear infinite;
     animation: flickerSkills 1.5s linear infinite;
 }
 @keyframes flickerSkills {
