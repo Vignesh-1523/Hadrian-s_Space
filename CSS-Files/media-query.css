@@ -1,0 +1,324 @@
+/* home page */
+@media screen and (max-width: 450px) {
+    section{
+        width: 100dvw;
+        overflow: hidden;
+    }
+    header{
+        height: 3.5em;
+    }
+    header h2{
+        margin-left: 5em;
+        font-size: 1.2em;
+    }
+    header h2 i{
+        cursor: pointer;
+        color: #9931fa;
+        font-size: 1.2em;
+        text-shadow: 0 0 5px #9931fa;
+        animation: saturn 2s linear infinite;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .btn{
+        display: none;
+    }
+    .home::before{
+        height: 70%;
+        margin-left: 8%;
+    }
+    .home::after{
+        width: 5px;
+        height: 5px;
+        top: 30%;
+        margin-left: 6.5%;
+    }
+    .home .contents{
+        margin-left: -5%;
+        margin-right: 5%;
+    }
+    .home .contents .tag{
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+    }
+    .home .contents .tag span{
+        font-size: 1em;
+        margin-left: 0.3em;
+    }
+    .tag1{
+        font-size: 1.7em;
+        margin-bottom: 1.2em;
+    }
+    .tag2{
+        font-size: 1em;
+    }
+    .tag3{
+        font-size: 1em;
+        color: #a0a0a0;
+        margin-top: 2em;
+        font-family: 'Nova Square', sans-serif;
+    }
+}   
+
+/* about section */
+@media screen and (max-width: 450px) {
+    .about::before{
+        margin-left: 8%;
+    }
+    .about::after{
+        left: 6.5%;
+    }
+    .about .contents{
+        margin-left: 12%;
+        margin-top: 6%;
+    }
+    .about .contents .tag{
+        font-size: 1em;
+    }
+    .about .contents .profile{
+        margin: 10% auto 3em auto;
+        height: 3em;
+        width: 100%;
+    }
+    .about .contents .profile h1{
+        font-size: 1.4em;
+        margin: 0 0 0.4em 0;
+        line-height: 1.6;
+        color: #c7c7c7;
+    }
+    .about .contents .profile h1 span{
+        color: #6d00d3;
+    }
+    .br{
+        display: block;
+    }
+    .profile-summary{
+        padding: 30px 30px;
+        width: 95%;
+    }
+    .profile-summary span{
+        margin-bottom: 1em;
+        font-size: 0.8em;
+    }
+    .profile-summary span span{
+        color: #6d00d3;
+        text-shadow: 0 0 5px #9931fa;
+    }
+    .profile-summary p{
+        font-size: 0.9em;
+    }
+    .profile-summary p span{
+        font-size: 18px;
+    }
+    .skills{
+        display: flex;
+        padding: 30px;
+        width: 95%;
+    }
+    .skills h2{
+        font-size: 1.8em;
+    }
+    .skills span{
+        width: 60px;
+        height: 60px;
+    }
+    .skills i{
+        font-size: 1.8em;
+    }
+    #a{
+        top: 29.65%;
+        left: 42.5%;
+    }
+    #b{
+        left: 42.5%;
+        top: 38.6%;
+    }
+    #c{
+        right: 63.5%;
+        bottom: 56.5%;
+    }
+    #d{ 
+        right: 63.5%;
+        bottom: 39.25%;
+    }
+    #e{
+        right: 63.5%;
+        top: 48.4%;
+    } 
+    #f{
+        right: 63.5%;
+        bottom: 45%;
+    } 
+    #a:before, #b:before, #c:before, 
+    #d:before, #e:before, #f:before{
+        left: 100%;
+        top: 50%;
+        animation: length 1.5s linear forwards;
+        /* display: none; */
+    }
+    @keyframes length{
+        from{
+            width: 0px;
+        }
+        to{
+            width: 170px;
+        }
+    }
+    #a::after, #b::after, #c::after,
+    #d::after, #e::after, #f::after{
+        width: 5px;
+        height: 5px;
+        left: calc(100% + 160px);
+        margin-left: 4%;
+        margin-top: 2%;
+        animation: dots 2s linear forwards;
+        display: none;
+    }
+    .skills span p{
+        position: absolute;
+        min-width: 130px;
+        display: none;
+    }
+    .css, .js, .sql, .java, .html, .git{
+        top: 25%;
+        font-size: 0.58em;
+        animation: glow 1.5s linear forwards;
+    }
+    .css{
+        left: calc(100% + 115px);
+    }
+    .html{
+        left: calc(100% + 108px);
+    }
+    .sql{
+        left: calc(100% + 115px);
+    }
+    .java{
+        left: calc(100% + 113px);
+    }
+    .git{
+        left: calc(100% + 100px);
+    }
+    .js{
+        left: calc(100% + 90px);
+    }
+    .degree{
+        padding: 20px 10px 25px 10px;
+        min-height: 15em;
+        font-size: 0.8em;
+    }
+}
+/* portfolio section */
+@media screen and (max-width: 450px) {
+    .portfolio::before{
+        margin-left: 8%;
+    }
+    .portfolio::after{
+        margin-left: 7%;
+    }
+    .portfolio .tag{
+        left: 15%;
+        top: -7.5%;
+    }
+    .slider{
+        position: relative;
+        width: 80%;
+        height: 85vh;
+        margin: 3em;
+    }
+    .bg-item .contents{
+        padding: 9% 2% 7% 8%;
+    }
+    .bg-item .contents .btn{
+        top: 85%;
+        right: 20%;
+    }
+    .bg-item .contents #p1{
+        font-size: 0.8em;
+        margin: 1em 0em 2em 0.5em;
+        color: white;
+    }
+    .bg-item .contents #p2{
+        font-size: 0.85em;
+        width: 85%;
+    }
+    .bg-item .contents h2{
+        font-size: 2.2em;
+    }
+    .arrows{
+        top: 70%;
+    }
+    .arrows button{
+        margin-inline: 0.1em;
+    }
+}
+/* contact section */
+@media only screen and (max-width: 450px) {
+    .contact{
+        height: 90dvh;
+    }
+    .contact::before{
+        margin-left: 8%;
+        min-height: 55vh;
+    }
+    .service{
+        width: 100%;
+        min-height: 55vh;
+    }
+    .service span{
+        margin-top: 1em;
+        margin-left: 5%;
+    }
+    .service div{
+        width: 80%;
+        margin-left: 8%;
+    }
+    .service div .big{
+        font-size: 1.1em;
+        margin-top: 0.5em;
+        margin-bottom: 1.2em;
+    }
+    .service div .small{
+        color: #a0a0aa;
+        font-size: 0.8em;
+    }
+    .service .btn{
+        width: 220px;
+        margin: 3em 0 0 8%;
+        padding: 13px;
+    }
+    .service .btn a{
+        font-size: 1.4em;
+        color: rgb(248, 248, 248);
+    }
+    .service .btn:hover{
+        box-shadow: 0 0 130px #06e0f4;
+    }
+    .connect{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2em;
+        height: 35vh;
+    }
+    .connect div{
+        position: absolute;
+    }
+    .connect div a{
+        font-size: 0.8em;
+    }
+    .connect div:nth-child(1){
+        bottom: 28%;
+    }
+    .connect div:nth-child(2){
+        bottom: 20%;
+    }
+    .connect div:nth-child(3){
+        bottom: 12%;
+    }
+    .connect div:nth-child(4){
+        bottom: 4%;
+    }
+}
