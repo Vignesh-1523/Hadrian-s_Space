@@ -114,7 +114,7 @@ gsap.to(port_logo,  {
     }
 })
 
-let slider = document.querySelector(".slider")
+// let slider = document.querySelector(".slider")
 let service_span = document.querySelector(".service span")
 let service_div = document.querySelector(".service div")
 let service_btn = document.querySelector(".service .btn")
@@ -122,7 +122,7 @@ gsap.to(service_span,  {
     x: -700,
     duration: 0.8,
     scrollTrigger: {
-        trigger: slider,
+        trigger: empty,
         start: "top 10"
     }
 })
@@ -130,7 +130,7 @@ gsap.to(service_div,  {
     x: -680,
     duration: 1,
     scrollTrigger: {
-        trigger: slider,
+        trigger: empty,
         start: "top 10"
     }
 })
@@ -138,7 +138,7 @@ gsap.to(service_btn,  {
     x: -680,
     duration: 1.2,
     scrollTrigger: {
-        trigger: slider,
+        trigger: empty,
         start: "top 10"
     }
 })

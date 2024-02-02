@@ -1,13 +1,13 @@
 let items = document.querySelectorAll('.bg-item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
+let nextbtn = document.getElementById('nextbtn');
+let prevbtn = document.getElementById('prevbtn');
 let thumbnails = document.querySelectorAll('.item');
 
 
 let countItem = items.length;
 let itemActive = 0;
 // event next click
-next.onclick = function(){
+nextbtn.onclick = function(){
     itemActive = itemActive + 1;
     if(itemActive >= countItem){
         itemActive = 0;
@@ -15,7 +15,7 @@ next.onclick = function(){
     showSlider();
 }
 //event prev click
-prev.onclick = function(){
+prevbtn.onclick = function(){
     itemActive = itemActive - 1;
     if(itemActive < 0){
         itemActive = countItem - 1;
@@ -24,7 +24,7 @@ prev.onclick = function(){
 }
 // auto run slider
 let refreshInterval = setInterval(() => {
-    next.click();
+    nextbtn.click();
 }, 5000)
 function showSlider(){
     // remove item active old
@@ -40,7 +40,7 @@ function showSlider(){
     // clear auto time run slider
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
-        next.click();
+        nextbtn.click();
     }, 10000)
 }
 

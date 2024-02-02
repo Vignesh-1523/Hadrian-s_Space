@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hadrian's space</ion-icon></title>
+    <title>Hadrian's space</title>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -25,19 +25,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
 
+    <script>
+        var script;
+        if(window.matchMedia('(min-width: 600px)').matches){
+            script = document.createElement('script')
+            script.src = 'plugins.js'
+            document.head.appendChild(script)
+        }else{
+            var scriptElement = document.querySelector('seript[src="plugins.js"]')
+            if(scriptElement){
+                scriptElement.parentNode.removeChild(scriptElement)
+            }
+        }
+    </script>
+    <script src="menu.js"></script>
 </head>
 
 <body>
     <div class="container">
         <video src="videoplayback (1).mp4" autoplay loop muted></video>
+        <div class="side">
+            <ion-icon name="close" id="close"></ion-icon>
+            <div>
+                <a href="#home" class="home-menu"><ion-icon name="home"></ion-icon> Home <span>/></span></a>
+                <a href="#about" class="about-menu"><ion-icon name="bulb"></ion-icon> About <span>/></span></a>
+                <a href="#portfolio" class="portfolio-menu"><ion-icon name="telescope"></ion-icon> Projects <span>/></span></a>
+                <a href="#contact" class="contact-menu"><ion-icon name="chatbubbles"></ion-icon> Contact <span>/></span></a>
+            </div>
+        </div>
         <header>
-            <h2>Hadrian's <i class='bx bx-code-alt'></i> space</h2>
+            <h2 ><a href="#home">Hadrian's <i class='bx bx-code-alt'></i> space</a></h2>
             <div class="navbar">
                 <a href="#home" id="startMenu" class="blink">Start <span>/></span></a>
                 <a href="#about" id="aboutMenu">About <span>/></span></a>
                 <a href="#portfolio" id="workMenu">Work <span>/></span></a>
             </div>
             <button class="btn"><a href="#contact">Get in touch</a></button>
+            <ion-icon name="layers" id="menu"></ion-icon>
         </header>
         <section class="home" id="home">
             <div class="contents">
@@ -148,8 +172,9 @@
                     <div class="bg-item active">
                         <img src="image/portfolio.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Hadrian-s_Space/">Visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Hadrian-s_Space/" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">intermediate design <span>/></span></p>
                             <h2>Personal Portfolio</h2>
                             <p id="p2">Created a captivating personal portfolio website highlighting skills, projects,
@@ -159,8 +184,9 @@
                     <div class="bg-item">
                         <img src="image/calculator.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Calculator/">Visit <ion-icon
-                                        name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Calculator/" target="_blank">Visit <ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">simple project <span>/></span></p>
                             <h2>Calculator</h2>
                             <p id="p2">Created a dynamic calculator inspired from some real calculator design.</p>
@@ -169,8 +195,9 @@
                     <div class="bg-item">
                         <img src="image/groove img3.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Groove-Music-clone/">Visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Groove-Music-clone/" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">intermediate design <span>/></span></p>
                             <h2>Groove Music</h2>
                             <p id="p2">Developed a feature-rich clone of the Windows 10 Groove Music application using a
@@ -181,8 +208,9 @@
                     <div class="bg-item">
                         <img src="image/netflix.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Netflix-Login/index.html">Visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Netflix-Login/index.html" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">simple project <span>/></span></p>
                             <h2>Netflix Login page</h2>
                             <p id="p2">Designed a Netflix-inspired login page with sign-in and sign-up functionality,
@@ -192,8 +220,9 @@
                     <div class="bg-item">
                         <img src="image/quiz.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Quiz-Game/">Visit <ion-icon
-                                        name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Quiz-Game/" target="_blank">Visit <ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">intermediate design <span>/></span></p>
                             <h2>Quiz application</h2>
                             <p id="p2">Developed an interactive Quiz Application using JavaScript, providing a seamless
@@ -203,8 +232,9 @@
                     <div class="bg-item">
                         <img src="image/password.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Password-Generator/">Visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Password-Generator/" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">simple project <span>/></span></p>
                             <h2>Password Generator</h2>
                             <p id="p2">Crafted a dynamic Password Generator website using HTML, CSS, and JavaScript,
@@ -215,8 +245,9 @@
                     <div class="bg-item">
                         <img src="image/tic tac tow.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/Tic-Tac-Toe-interface/">Visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/Tic-Tac-Toe-interface/" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">simple project <span>/></span></p>
                             <h2>Tic Tac Toe</h2>
                             <p id="p2">Built a multiplayer dragging Tic Tac Toe game interface design using HTML, CSS,
@@ -226,8 +257,9 @@
                     <div class="bg-item">
                         <img src="image/youtube.png" alt="">
                         <div class="contents">
-                            <button class="btn"><a href="https://vignesh-1523.github.io/YouTube-demo-interface/">visit
-                                    <ion-icon name="rocket-outline"></ion-icon></a></button>
+                            <!-- <button class="btn"> -->
+                                <a href="https://vignesh-1523.github.io/YouTube-demo-interface/" target="_blank">Visit<ion-icon name="rocket-outline"></ion-icon></a>
+                            <!-- </button> -->
                             <p id="p1">simple project <span>/></span></p>
                             <h2>YouTube-Interface</h2>
                             <p id="p2">Developed a minimalist YouTube interface using HTML and CSS.</p>
@@ -236,8 +268,8 @@
                 </div>
                 <!-- button arrows -->
                 <div class="arrows">
-                    <button id="prev"><</button>
-                            <button id="next">></button>
+                    <button id="prevbtn"><</button>
+                    <button id="nextbtn">></button>
                 </div>
                 <div class="thumbnail">
                     <div class="list">
@@ -309,7 +341,7 @@
     <script src="slider.js"></script>
     <script src="app.js"></script>
 
-    <script src="plugins.js"></script>
+    <!-- <script src="plugins.js"></script> -->
 </body>
 
 </html>

@@ -49,11 +49,28 @@ header{
     backdrop-filter: blur(20px);
     z-index: 99;
 }
-header h2{
+header #menu{
+    display: none;
+}
+.side {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    transition: left 0.3s ease;
+}
+header h2 a{
+    text-decoration: none;
     color: rgb(200, 200, 200);
     margin-left: 2em;
 }
-header h2 i{
+header h2 a i{
     cursor: pointer;
     color: #9931fa;
     font-size: 1.2em;
