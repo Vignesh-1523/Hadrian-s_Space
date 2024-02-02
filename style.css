@@ -197,4 +197,5 @@ video{
     height: 100vh;
     object-fit: cover;
     position: absolute;
+    filter: brightness(2);
 }
