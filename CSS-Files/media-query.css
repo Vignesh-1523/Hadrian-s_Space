@@ -1,14 +1,66 @@
 /* home page */
 @media screen and (max-width: 450px) {
     section{
-        width: 100dvw;
+        max-width: 100%;
         overflow: hidden;
     }
     header{
         height: 3.5em;
     }
+    header #menu{
+        display: inline-block;
+        font-size: 1.5em;
+        position: absolute;
+        left: 4%;
+        margin: auto 0;
+        color: #9931fa;
+    }
+    #close{
+        display: none;
+    }
+    #close.active{
+        display: inline-block;
+        font-size: 1.8em;
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        margin: auto 0;
+        /* color: rgb(200, 200, 200); */
+        color: #9931fa;
+    }
+    .side.active {
+        left: 0;
+    }
+    .side div{
+        margin-top: 80px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .side div a{
+        text-decoration: none;
+        color: rgb(200, 200, 200);
+        /* color: white; */
+        margin: 15px 15px 15px 50px;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Belgrano', serif;
+    }
+    .side div a ion-icon{
+        text-align: center;
+        color: #9931fa;
+        font-size: 1.5em;
+        margin: 0 15px 7px 0;
+    }
+    .side div a span{
+        margin-left: 8px;
+        color: #a0a0a0;
+        /* text-shadow: 0 0 3px white; */
+    }
     header h2{
-        margin-left: 5em;
+        margin: 0 auto;
         font-size: 1.2em;
     }
     header h2 i{
@@ -24,6 +76,10 @@
     header .btn{
         display: none;
     }
+    .home{
+        width: 100%;
+        overflow-x: hidden;
+    }
     .home::before{
         height: 70%;
         margin-left: 8%;
@@ -31,8 +87,8 @@
     .home::after{
         width: 5px;
         height: 5px;
-        top: 30%;
-        margin-left: 6.5%;
+        top: 29.9%;
+        margin-left: calc(100vw - 93.1%);
     }
     .home .contents{
         margin-left: -5%;
@@ -64,17 +120,29 @@
 
 /* about section */
 @media screen and (max-width: 450px) {
+    .about #background-text1{
+        font-size: 2.9em;
+        right: 0%;
+        margin-top: -5.2em;
+        /* color: white; */
+    }
+    .about #background-text2{
+        font-size: 3em;
+        right: -35%;
+        margin-top: -2.1em;
+    }
     .about::before{
         margin-left: 8%;
     }
     .about::after{
-        left: 6.5%;
+        left: calc(100vw - 93.1%);
     }
     .about .contents{
         margin-left: 12%;
         margin-top: 6%;
     }
     .about .contents .tag{
+        top: 0.2em;
         font-size: 1em;
     }
     .about .contents .profile{
@@ -97,6 +165,7 @@
     .profile-summary{
         padding: 30px 30px;
         width: 95%;
+        margin-left: 0;
     }
     .profile-summary span{
         margin-bottom: 1em;
@@ -128,49 +197,70 @@
         font-size: 1.8em;
     }
     #a{
-        top: 29.65%;
-        left: 42.5%;
+        margin-bottom: 26em;
+        left: 20.5%;
+        margin-left: 0%;
     }
     #b{
-        left: 42.5%;
-        top: 38.6%;
+        left: 70%;
+        margin-bottom: 13.5em;
+        margin-left: 0%;
     }
     #c{
-        right: 63.5%;
-        bottom: 56.5%;
+        margin-bottom: 12em;
+        left: 20.5%;
+        margin-left: 0%;
     }
     #d{ 
-        right: 63.5%;
-        bottom: 39.25%;
+        left: 70%;
+        margin-top: 27em;
+        margin-left: 0%;
     }
     #e{
-        right: 63.5%;
-        top: 48.4%;
+        margin-top: 16em;
+        left: 20.5%;
+        margin-left: 0%;
     } 
     #f{
-        right: 63.5%;
-        bottom: 45%;
+        left: 70%;
+        margin-top: 12em;
+        margin-left: 0%;
     } 
     #a:before, #b:before, #c:before, 
-    #d:before, #e:before, #f:before{
+    #d:before, #e:before{
         left: 100%;
         top: 50%;
         animation: length 1.5s linear forwards;
         /* display: none; */
     }
+    #b:before, #d:before, #f:before{
+        left: -250%;
+        top: 50%;
+        animation: length 1.5s linear forwards;
+        /* display: none; */
+        z-index: -1;
+    }
     @keyframes length{
-        from{
-            width: 0px;
-        }
         to{
             width: 170px;
         }
+        from{
+            width: 0px;
+        }
     }
-    #a::after, #b::after, #c::after,
-    #d::after, #e::after, #f::after{
+    #a::after, #c::after, #e::after{
         width: 5px;
         height: 5px;
         left: calc(100% + 160px);
+        margin-left: 4%;
+        margin-top: 2%;
+        animation: dots 2s linear forwards;
+        display: none;
+    }
+    #b:after, #d:after, #f::after{
+        width: 5px;
+        height: 5px;
+        left: calc(-200% + -40px);
         margin-left: 4%;
         margin-top: 2%;
         animation: dots 2s linear forwards;
@@ -187,19 +277,19 @@
         animation: glow 1.5s linear forwards;
     }
     .css{
-        left: calc(100% + 115px);
+        left: calc(-100% + -80px);
     }
     .html{
         left: calc(100% + 108px);
     }
     .sql{
-        left: calc(100% + 115px);
+        left: calc(-100% + -80px);
     }
     .java{
         left: calc(100% + 113px);
     }
     .git{
-        left: calc(100% + 100px);
+        left: calc(-100% + -80px);
     }
     .js{
         left: calc(100% + 90px);
@@ -212,6 +302,10 @@
 }
 /* portfolio section */
 @media screen and (max-width: 450px) {
+    .portfolio #background-text3{
+        font-size: 3em;
+        right: 0;
+    }
     .portfolio::before{
         margin-left: 8%;
     }
@@ -220,7 +314,7 @@
     }
     .portfolio .tag{
         left: 15%;
-        top: -7.5%;
+        top: -7.2%;
     }
     .slider{
         position: relative;
@@ -231,9 +325,9 @@
     .bg-item .contents{
         padding: 9% 2% 7% 8%;
     }
-    .bg-item .contents .btn{
+    .bg-item .contents a{
         top: 85%;
-        right: 20%;
+        right: 31%;
     }
     .bg-item .contents #p1{
         font-size: 0.8em;

@@ -121,21 +121,26 @@
     border-bottom-left-radius: 20px;
     backdrop-filter: blur(2px);
 }
-.bg-item .contents .btn{
-    top: 15%;
-    position: absolute;
-    right: 3%;
-    cursor: pointer;
-}
-.bg-item .contents .btn a{
-    font-size: 1.2em;
+.bg-item .contents a{
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1em;
+    top: 15%;
+    position: absolute;
+    right: 8%;
+    cursor: pointer;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(180deg,white 0%,rgb(226, 226, 226) 100%);
+    text-decoration: none;
+    color: black;
+    z-index: 100;
+    text-align: center;
 }
-.bg-item .contents .btn a ion-icon{
-    font-size: 1.5em;
+.bg-item .contents a ion-icon{
+    font-size: 1.2em;
     margin-left: 0.3em;
 }
 .bg-item .contents #p1{
