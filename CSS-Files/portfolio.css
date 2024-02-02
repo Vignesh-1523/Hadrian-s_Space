@@ -39,11 +39,12 @@
     right: 5%;
     top: 9%;
     font-size: 9em;
-    background: linear-gradient(180deg , rgb(16, 18, 36), rgb(6, 2, 15));
+    background: linear-gradient(180deg , rgb(29, 29, 43), rgb(12, 7, 22));
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     z-index: 0;
+    right: -100%;
 }
 .portfolio .tag{
     color: #a0a0a0;
@@ -118,7 +119,7 @@
     background-color: #00000063;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(2px);
 }
 .bg-item .contents .btn{
     top: 15%;

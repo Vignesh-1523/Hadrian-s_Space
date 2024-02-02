@@ -38,6 +38,7 @@
     margin-top: -5em;
     margin-bottom: 2em;
     margin-left: -2em;
+    margin-left: 100%;
 }
 .service div{
     display: flex;
@@ -54,6 +55,7 @@
     box-shadow: 0 0 20px #3f3f3f44;
     padding-inline: 20px;
     z-index: 0;
+    margin-left: 100%;
 }
 
 .service div .big{
@@ -85,7 +87,8 @@
 .service .btn{
     background: linear-gradient(180deg,#06e1f4 0%,rgb(0, 88, 121) 100%);
     margin-top: 2em;
-    transition: 0.5s ease-in-out;
+    /* transition: 0.5s ease-in-out; */
+    margin-left: 100%;
 }
 .service .btn a{
     color: rgb(255, 255, 255);

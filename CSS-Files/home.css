@@ -62,10 +62,10 @@
     top: 37%;
 }
 .tag1{
-    font-size: 3.5em;
+    font-size: 3.7em;
     margin-bottom: 0.5em;
     color: transparent;
-    background-image: linear-gradient(to right, rgb(215, 215, 215), #ba7ff1);
+    background-image: linear-gradient(to right, #b164fa, #8400ff);
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'Nova Square', sans-serif;
@@ -73,14 +73,15 @@
 .tag2{
     font-size: 1.5em;
     color: transparent;
-    background-image: linear-gradient(180deg, white, #9931fa);
+    background-image: linear-gradient(180deg, white, #b4b4b4);
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'Kalam', cursive;
+    margin-top: 2.5em;
 }
 .tag3{
-    font-size: 1.5em;
-    color: #a0a0a0;
+    font-size: 1.3em;
+    color: #6b6b6b;
     margin-top: 2em;
     font-family: 'Nova Square', sans-serif;
 }

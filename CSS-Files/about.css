@@ -37,24 +37,26 @@
     right: 3%;
     top: 40%;
     font-size: 9em;
-    background: linear-gradient(180deg , rgb(16, 18, 36), rgb(6, 2, 15));
+    background: linear-gradient(180deg , rgb(29, 29, 43), rgb(18, 10, 37));
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     z-index: 0;
     text-align: center;
+    right: -100%;
 }
 .about #background-text2{
     position: absolute;
     left: 5%;
     top: 70%;
     font-size: 9em;
-    background: linear-gradient(180deg , rgb(16, 18, 36), rgb(6, 2, 15));
+    background: linear-gradient(180deg , rgb(29, 29, 43), rgb(18, 10, 37));
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     z-index: 0;
     text-align: center;
+    left: -60%;
 }
 .about .contents{
     /* background-color: white; */
@@ -83,6 +85,7 @@
     /* background-color: white; */
     height: 6em;
     width: 100%;
+    margin-left: 100%;
 }
 .about .contents .profile h1{
     font-size: 3em;
@@ -106,6 +109,7 @@
     /* background-image: url('/one.jpeg'); */
     background-color: #041825;
     z-index: 1;
+    margin-left: 100%;
 }
 .profile-summary span{
     margin-bottom: 1em;
@@ -126,7 +130,6 @@
 .profile-summary:hover p{
     transition: 1.5s;
     color: rgb(212, 212, 212);
-    text-shadow: 0 0 2px rgb(212, 212, 212);
 }
 .profile-summary p span{
     color: #6d00d3;
@@ -174,6 +177,7 @@
     justify-content: center;
     align-items: center;
     opacity: 1;
+    /* margin-left: 100%; */
 }
 .skills i{
     font-size: 3.2em;
@@ -185,31 +189,37 @@
     margin-top: 10%;
     margin-left: -22%;
     background: linear-gradient(180deg,#ffca00 0%,rgba(234,155,4,1) 100%);
+    margin-left: 130%;
 }
 #b{
     margin-left: -22%;
     margin-top: -12%;
     background: linear-gradient(180deg,#cc67f3 0%,rgba(140,50,200,1) 100%);
+    margin-left: 130%;
 }
 #c{
     margin-left: 0%;
     margin-top: 21%;
     background: linear-gradient(180deg,#06e1f4 0%,rgba(2,157,213,1) 100%);
+    margin-left: 130%;
 }
 #d{ 
     margin-left: 21%;
     margin-bottom: 12%;
     background: linear-gradient(180deg,#1eff00 0%,rgb(17, 184, 2) 100%);
+    margin-left: 130%;
 }
 #e{
     margin-left: 21%;
     margin-top: 10%;
     background: linear-gradient(180deg,#ff3737 0%,rgb(185, 0, 0) 100%);
+    margin-left: 130%;
 } 
 #f{
     margin-left: 0%;
     margin-bottom: 23%;
     background: linear-gradient(180deg,#ffffff 0%,rgb(212, 212, 212) 100%);
+    margin-left: 130%;
 } 
 #a:before, #b:before{
     content: '';
@@ -255,7 +265,7 @@
     width: 0px;
     height: 2px;
     top: 80%;
-    left: 80%;
+    left: 89%;
     background-color: #6d00d3;
     text-shadow: 0 0 5px #9931fa;
     z-index: -1;
@@ -268,7 +278,7 @@
     width: 0px;
     height: 2px;
     bottom: 80%;
-    left: 80%;
+    left: 89%;
     background-color: #6d00d3;
     text-shadow: 0 0 5px #9931fa;
     z-index: -1;
