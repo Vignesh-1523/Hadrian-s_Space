@@ -3,16 +3,18 @@ gsap.registerPlugin(ScrollTrigger);
 let profile = document.getElementById("profile")
 let profile_anim = document.querySelector(".profile-summary")
 let tag3 = document.querySelector(".profile .tag3")
+
+
 gsap.to(profile, {
-    x: -1050,
+    x: -1600,
     duration: 0.6,
     scrollTrigger: {
         trigger: tag3,
         start: "top 70"
     }
-})
+});
 gsap.to(profile_anim, {
-    x: -1050,
+    x: -1600,
     duration: 1,
     scrollTrigger: {
         trigger: tag3,
@@ -38,7 +40,7 @@ gsap.to(skill_logo,  {
 })
 
 gsap.to(a_anim,  {
-    x: -1050,
+    x: -950,
     duration: 0.7,
     scrollTrigger: {
         trigger: profile_anim,
@@ -47,7 +49,7 @@ gsap.to(a_anim,  {
 })
 
 gsap.to(b_anim,  {
-    x: -1050,
+    x: -950,
     duration: 0.9,
     scrollTrigger: {
         trigger: profile_anim,
@@ -56,7 +58,7 @@ gsap.to(b_anim,  {
 })
 
 gsap.to(c_anim,  {
-    x: -890,
+    x: -800,
     duration: 1.2,
     scrollTrigger: {
         trigger: profile_anim,
@@ -65,7 +67,7 @@ gsap.to(c_anim,  {
 })
 
 gsap.to(d_anim,  {
-    x: -740,
+    x: -650,
     duration: 1.8,
     scrollTrigger: {
         trigger: profile_anim,
@@ -74,7 +76,7 @@ gsap.to(d_anim,  {
 })
 
 gsap.to(e_anim,  {
-    x: -740,
+    x: -650,
     duration: 2.0,
     scrollTrigger: {
         trigger: profile_anim,
@@ -83,7 +85,7 @@ gsap.to(e_anim,  {
 })
 
 gsap.to(f_anim,  {
-    x: -890,
+    x: -800,
     duration: 1.4,
     scrollTrigger: {
         trigger: profile_anim,
@@ -119,7 +121,7 @@ let service_span = document.querySelector(".service span")
 let service_div = document.querySelector(".service div")
 let service_btn = document.querySelector(".service .btn")
 gsap.to(service_span,  {
-    x: -700,
+    x: -820,
     duration: 0.8,
     scrollTrigger: {
         trigger: empty,
@@ -127,7 +129,7 @@ gsap.to(service_span,  {
     }
 })
 gsap.to(service_div,  {
-    x: -680,
+    x: -800,
     duration: 1,
     scrollTrigger: {
         trigger: empty,
@@ -135,7 +137,7 @@ gsap.to(service_div,  {
     }
 })
 gsap.to(service_btn,  {
-    x: -680,
+    x: -800,
     duration: 1.2,
     scrollTrigger: {
         trigger: empty,
