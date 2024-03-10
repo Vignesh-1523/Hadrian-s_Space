@@ -85,7 +85,7 @@
     /* background-color: white; */
     height: 6em;
     width: 100%;
-    margin-left: 100%;
+    margin-left: 1600px;
 }
 .about .contents .profile h1{
     font-size: 3em;
@@ -109,7 +109,7 @@
     /* background-image: url('/one.jpeg'); */
     background-color: #041825;
     z-index: 1;
-    margin-left: 100%;
+    margin-left: 1600px;
 }
 .profile-summary span{
     margin-bottom: 1em;
@@ -189,37 +189,37 @@
     margin-top: 10%;
     margin-left: -22%;
     background: linear-gradient(180deg,#ffca00 0%,rgba(234,155,4,1) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 }
 #b{
     margin-left: -22%;
     margin-top: -12%;
     background: linear-gradient(180deg,#cc67f3 0%,rgba(140,50,200,1) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 }
 #c{
     margin-left: 0%;
     margin-top: 21%;
     background: linear-gradient(180deg,#06e1f4 0%,rgba(2,157,213,1) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 }
 #d{ 
     margin-left: 21%;
     margin-bottom: 12%;
     background: linear-gradient(180deg,#1eff00 0%,rgb(17, 184, 2) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 }
 #e{
     margin-left: 21%;
     margin-top: 10%;
     background: linear-gradient(180deg,#ff3737 0%,rgb(185, 0, 0) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 } 
 #f{
     margin-left: 0%;
     margin-bottom: 23%;
     background: linear-gradient(180deg,#ffffff 0%,rgb(212, 212, 212) 100%);
-    margin-left: 130%;
+    margin-left: 1600px;
 } 
 #a:before, #b:before{
     content: '';
